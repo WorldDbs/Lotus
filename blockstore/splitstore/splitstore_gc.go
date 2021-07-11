@@ -19,7 +19,7 @@ func (s *SplitStore) gcHotstore() {
 			return
 		}
 
-		log.Infof("moving hotstore done", "took", time.Since(startMove))
+		log.Infow("moving hotstore done", "took", time.Since(startMove))
 
 		// clean up empty dirs in our path from previous compactions; MoveTo only removes the link
 		log.Info("cleaning up splitstore directory")
@@ -65,7 +65,7 @@ func (s *SplitStore) gcHotstore() {
 			return
 		}
 
-		log.Infof("garbage collecting hotstore done", "took", time.Since(startGC))
+		log.Infow("garbage collecting hotstore done", "took", time.Since(startGC))
 		return
 	}
 
