@@ -122,7 +122,8 @@ type SplitStore struct {
 	compacting int32 // compaction (or warmp up) in progress
 	closing    int32 // the splitstore is closing
 
-	cfg *Config
+	cfg  *Config
+	path string
 
 	mx          sync.Mutex
 	warmupEpoch abi.ChainEpoch // protected by mx
@@ -189,6 +190,7 @@ func Open(path string, ds dstore.Datastore, hot, cold bstore.Blockstore, cfg *Co
 	// and now we can make a SplitStore
 	ss := &SplitStore{
 		cfg:        cfg,
+		path:       path,
 		ds:         ds,
 		cold:       cold,
 		hot:        hots,
