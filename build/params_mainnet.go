@@ -68,6 +68,7 @@ func init() {
 	policy.SetConsensusMinerMinPower(abi.NewStoragePower(512 << 20))
 	policy.SetSupportedProofTypes(
 		abi.RegisteredSealProof_StackedDrg512MiBV1,
+		abi.RegisteredSealProof_StackedDrg32GiBV1,
 	)
 
 	if os.Getenv("LOTUS_USE_TEST_ADDRESSES") != "1" {
