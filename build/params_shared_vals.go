@@ -62,18 +62,18 @@ const TicketRandomnessLookback = abi.ChainEpoch(1)
 const AddressMainnetEnvVar = "_mainnet_"
 
 // the 'f' prefix doesn't matter
-var ZeroAddress = MustParseAddress("f3yaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaby2smx7a")
+var ZeroAddress = MustParseAddress("w3yaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaby2smx7a")
 
 // /////
 // Devnet settings
 
 var Devnet = true
 
-const FilBase = uint64(2_000_000_000)
-const FilAllocStorageMining = uint64(1_100_000_000)
+const FilBase = uint64(200_000_000)
+const FilAllocStorageMining = FilBase - uint64(500000)
 
 const FilecoinPrecision = uint64(1_000_000_000_000_000_000)
-const FilReserved = uint64(300_000_000)
+const FilReserved = uint64(0)
 
 var InitialRewardBalance *big.Int
 var InitialFilReserved *big.Int

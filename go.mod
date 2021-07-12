@@ -158,10 +158,15 @@ require (
 	honnef.co/go/tools v0.0.1-2020.1.3 // indirect
 )
 
-replace github.com/filecoin-project/lotus => ./
-
-replace github.com/golangci/golangci-lint => github.com/golangci/golangci-lint v1.18.0
-
-replace github.com/filecoin-project/filecoin-ffi => ./extern/filecoin-ffi
-
-replace github.com/filecoin-project/test-vectors => ./extern/test-vectors
+replace (
+	github.com/filecoin-project/filecoin-ffi => ./extern/filecoin-ffi
+	github.com/filecoin-project/go-address v0.0.5 => github.com/wd-002/go-address v0.0.6-0.20210712031549-df4e0bb30482
+	github.com/filecoin-project/lotus => ./
+	github.com/filecoin-project/specs-actors v0.9.13 => github.com/wd-002/specs-actors v0.9.14-0.20210712062801-fdf8051ee071
+	github.com/filecoin-project/specs-actors/v2 v2.3.5-0.20210114162132-5b58b773f4fb => github.com/wd-002/specs-actors/v2 v2.3.5-0.20210712082039-d4e89e6d8737
+	github.com/filecoin-project/specs-actors/v3 v3.1.0 => github.com/wd-002/specs-actors/v3 v3.1.1-0.20210712083416-c7fa3e17f3c3
+	github.com/filecoin-project/specs-actors/v4 v4.0.0 => github.com/wd-002/specs-actors/v4 v4.0.1-0.20210712084143-8e46519e1c72
+	github.com/filecoin-project/specs-actors/v5 v5.0.1 => github.com/wd-002/specs-actors/v5 v5.0.2-0.20210712084718-9b290c046e5e
+	github.com/filecoin-project/test-vectors => ./extern/test-vectors
+	github.com/golangci/golangci-lint => github.com/golangci/golangci-lint v1.18.0
+)

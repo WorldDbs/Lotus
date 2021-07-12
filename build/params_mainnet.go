@@ -18,55 +18,57 @@ import (
 )
 
 var DrandSchedule = map[abi.ChainEpoch]DrandEnum{
-	0:                  DrandIncentinet,
 	UpgradeSmokeHeight: DrandMainnet,
 }
 
 const BootstrappersFile = "mainnet.pi"
 const GenesisFile = "mainnet.car"
 
-const UpgradeBreezeHeight = 41280
+const UpgradeBreezeHeight = -1
 
-const BreezeGasTampingDuration = 120
+const BreezeGasTampingDuration = 0
 
-const UpgradeSmokeHeight = 51000
+const UpgradeSmokeHeight = -1
 
-const UpgradeIgnitionHeight = 94000
-const UpgradeRefuelHeight = 130800
+const UpgradeIgnitionHeight = -2
+const UpgradeRefuelHeight = -3
 
-const UpgradeAssemblyHeight = 138720
+const UpgradeAssemblyHeight = 10
 
-const UpgradeTapeHeight = 140760
+const UpgradeTapeHeight = -4
 
 // This signals our tentative epoch for mainnet launch. Can make it later, but not earlier.
 // Miners, clients, developers, custodians all need time to prepare.
 // We still have upgrades and state changes to do, but can happen after signaling timing here.
-const UpgradeLiftoffHeight = 148888
+const UpgradeLiftoffHeight = -5
 
-const UpgradeKumquatHeight = 170000
+const UpgradeKumquatHeight = 15
 
-const UpgradeCalicoHeight = 265200
-const UpgradePersianHeight = UpgradeCalicoHeight + (builtin2.EpochsInHour * 60)
+const UpgradeCalicoHeight = 20
+const UpgradePersianHeight = 25
 
-const UpgradeOrangeHeight = 336458
+const UpgradeOrangeHeight = 27
 
 // 2020-12-22T02:00:00Z
-var UpgradeClausHeight = abi.ChainEpoch(343200)
+var UpgradeClausHeight = abi.ChainEpoch(30)
 
 // 2021-03-04T00:00:30Z
-const UpgradeTrustHeight = 550321
+const UpgradeTrustHeight = abi.ChainEpoch(230)
 
 // 2021-04-12T22:00:00Z
-const UpgradeNorwegianHeight = 665280
+const UpgradeNorwegianHeight = abi.ChainEpoch(400)
 
 // 2021-04-29T06:00:00Z
-const UpgradeTurboHeight = 712320
+const UpgradeTurboHeight = abi.ChainEpoch(650)
 
 // 2021-06-30T22:00:00Z
-var UpgradeHyperdriveHeight = abi.ChainEpoch(892800)
+var UpgradeHyperdriveHeight = abi.ChainEpoch(800)
 
 func init() {
-	policy.SetConsensusMinerMinPower(abi.NewStoragePower(10 << 40))
+	policy.SetConsensusMinerMinPower(abi.NewStoragePower(512 << 20))
+	policy.SetSupportedProofTypes(
+		abi.RegisteredSealProof_StackedDrg512MiBV1,
+	)
 
 	if os.Getenv("LOTUS_USE_TEST_ADDRESSES") != "1" {
 		SetAddressNetwork(address.Mainnet)

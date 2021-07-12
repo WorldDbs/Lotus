@@ -33,9 +33,9 @@ import (
 var SystemActorAddr = builtin5.SystemActorAddr
 var BurntFundsActorAddr = builtin5.BurntFundsActorAddr
 var CronActorAddr = builtin5.CronActorAddr
-var SaftAddress = makeAddress("t0122")
-var ReserveAddress = makeAddress("t090")
-var RootVerifierAddress = makeAddress("t080")
+var SaftAddress = makeAddress("w0122")
+var ReserveAddress = makeAddress("w090")
+var RootVerifierAddress = makeAddress("w080")
 
 var (
 	ExpectedLeadersPerEpoch = builtin5.ExpectedLeadersPerEpoch
