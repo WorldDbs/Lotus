@@ -1511,8 +1511,8 @@ github.com/wd-002/specs-actors/v3 v3.1.1-0.20210712083416-c7fa3e17f3c3 h1:p4pqX3
 github.com/wd-002/specs-actors/v3 v3.1.1-0.20210712083416-c7fa3e17f3c3/go.mod h1:mpynccOLlIRy0QnR008BwYBwT9fen+sPR13MA1VmMww=
 github.com/wd-002/specs-actors/v4 v4.0.1-0.20210712084143-8e46519e1c72 h1:NssQwZWlushp3nSr+E1ipdrprurlD/wg55nMEMJW4U0=
 github.com/wd-002/specs-actors/v4 v4.0.1-0.20210712084143-8e46519e1c72/go.mod h1:TkHXf/l7Wyw4ZejyXIPS2rK8bBO0rdwhTZyQQgaglng=
-github.com/wd-002/specs-actors/v5 v5.0.2-0.20210712084718-9b290c046e5e h1:7N7gBJk/rDogPjbwOuyPj9MFkTFa8Slpt4dsMI6WSq4=
-github.com/wd-002/specs-actors/v5 v5.0.2-0.20210712084718-9b290c046e5e/go.mod h1:74euMDIXorusOBs/QL/LNkYsXZdDpLJwojWw6T03pdE=
+github.com/wd-002/specs-actors/v5 v5.0.2-0.20210714122450-3edf6ce33449 h1:Ajb/Q/Uh7CuTOzHDhEE5U/ef6vMg5fKCa2vQ2DKBTYI=
+github.com/wd-002/specs-actors/v5 v5.0.2-0.20210714122450-3edf6ce33449/go.mod h1:74euMDIXorusOBs/QL/LNkYsXZdDpLJwojWw6T03pdE=
 github.com/weaveworks/common v0.0.0-20200512154658-384f10054ec5 h1:EYxr08r8x6r/5fLEAMMkida1BVgxVXE4LfZv/XV+znU=
 github.com/weaveworks/common v0.0.0-20200512154658-384f10054ec5/go.mod h1:c98fKi5B9u8OsKGiWHLRKus6ToQ1Tubeow44ECO1uxY=
 github.com/weaveworks/promrus v1.2.0 h1:jOLf6pe6/vss4qGHjXmGz4oDJQA+AOCqEL3FvvZGz7M=
