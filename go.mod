@@ -166,7 +166,7 @@ replace (
 	github.com/filecoin-project/specs-actors/v2 v2.3.5-0.20210114162132-5b58b773f4fb => github.com/wd-002/specs-actors/v2 v2.3.5-0.20210712082039-d4e89e6d8737
 	github.com/filecoin-project/specs-actors/v3 v3.1.0 => github.com/wd-002/specs-actors/v3 v3.1.1-0.20210712083416-c7fa3e17f3c3
 	github.com/filecoin-project/specs-actors/v4 v4.0.0 => github.com/wd-002/specs-actors/v4 v4.0.1-0.20210712084143-8e46519e1c72
-	github.com/filecoin-project/specs-actors/v5 v5.0.1 => github.com/wd-002/specs-actors/v5 v5.0.2-0.20210714122450-3edf6ce33449
+	github.com/filecoin-project/specs-actors/v5 v5.0.1 => github.com/wd-002/specs-actors/v5 v5.0.2-0.20210715013512-29966769e9ff
 	github.com/filecoin-project/test-vectors => ./extern/test-vectors
 	github.com/golangci/golangci-lint => github.com/golangci/golangci-lint v1.18.0
 )
